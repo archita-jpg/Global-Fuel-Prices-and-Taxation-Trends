@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Global Fuel Price Analysis</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Tableau Embedding API -->
+    <script type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION BAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+            GLOBAL FUEL INSIGHTS
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About the Data</a>
+
+            <a href="#dashboard">Dashboard</a>
+
+            <a href="#story">Story</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HOME SECTION ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                UNDERSTANDING GLOBAL ENERGY TRENDS
+            </p>
+
+            <h1>
+                GLOBAL FUEL<br>
+                PRICE ANALYSIS
+            </h1>
+
+            <p>
+                Exploring global fuel prices, taxation,
+                regional variations and economic trends
+                from 2020 to 2026.
+            </p>
+
+            <a href="#about" class="explore-btn">
+                EXPLORE PROJECT
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT DATA SECTION ================= -->
+
+    <section id="about" class="content-section about">
+
+        <h2>About the Data</h2>
+
+        <p class="section-description">
+
+            This project explores global fuel price patterns
+            and examines their relationship with taxation,
+            income levels and government subsidy policies.
+
+            The dataset provides insights into fuel price
+            variations across countries and regions over time.
+
+        </p>
+
+
+        <!-- DATASET STATISTICS -->
+
+        <div class="data-cards">
+
+            <div class="data-card">
+
+                <h3>27,468</h3>
+
+                <p>Data Records</p>
+
+            </div>
+
+
+            <div class="data-card">
+
+                <h3>84</h3>
+
+                <p>Countries</p>
+
+            </div>
+
+
+            <div class="data-card">
+
+                <h3>7</h3>
+
+                <p>Global Regions</p>
+
+            </div>
+
+
+            <div class="data-card">
+
+                <h3>2020–2026</h3>
+
+                <p>Time Period</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DATASET INFORMATION -->
+
+        <div class="dataset-info">
+
+            <h3>Dataset Overview</h3>
+
+            <p>
+                The dataset contains weekly observations
+                covering the period from January 2020
+                to April 2026.
+            </p>
+
+            <h3>Dataset Variables</h3>
+
+            <p>
+                Country, Date, Income Level, Region,
+                Subsidy Level, Brent Crude Price,
+                Petrol Price, Diesel Price, LPG Price
+                and Tax Percentage.
+            </p>
+
+            <h3>Project Objective</h3>
+
+            <p>
+                To analyze global fuel price trends,
+                compare regional differences, understand
+                taxation patterns and explore the role
+                of government subsidies and income levels.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD SECTION ================= -->
+
+    <section id="dashboard" class="content-section dashboard">
+
+        <h2>Interactive Dashboard</h2>
+
+        <p class="section-description">
+
+            Explore interactive visualizations of global
+            fuel prices, country-wise comparisons,
+            taxation patterns and historical trends.
+
+        </p>
+
+
+        
+<div class="tableau-container">
+
+    <tableau-viz
+        id="fuelDashboard"
+        src="https://public.tableau.com/views/GlobalFuelPricesandTaxationTrends_17933514125840/GlobalFuelPricesandTaxationTrends?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+        width="100%"
+        height="850px"
+        toolbar="bottom"
+        hide-tabs>
+    </tableau-viz>
+
+</div>
+
+
+    </section>
+
+
+    <!-- ================= STORY SECTION ================= -->
+
+    <section id="story" class="content-section story">
+
+        <h2>Global Fuel Price Story</h2>
+
+        <p class="section-description">
+
+            Discover the major findings of our analysis
+            through a visual data story covering geographical
+            variations, temporal trends, taxation,
+            economic impact and subsidy assessment.
+
+        </p>
+
+
+        <div class="tableau-container">
+
+            <!-- Replace with your published Story URL -->
+
+            <tableau-viz
+
+                src="https://public.tableau.com/views/GlobalFuelPricesandTaxationTrends_17933514125840/Story1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+
+                width="100%"
+
+                height="850"
+
+                hide-tabs>
+
+            </tableau-viz>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>GLOBAL FUEL PRICE ANALYSIS</h3>
+
+        <p>
+            Data Visualization Project | 2026
+        </p>
+
+        <p>
+            Exploring global energy trends through data.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
