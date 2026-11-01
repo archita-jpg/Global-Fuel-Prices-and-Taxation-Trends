@@ -28,4 +28,4 @@ taxation policies, and the impact of government subsidies.
 
    python app.py
 
-4. Open http://127.0.0.1:5000 in your browser.
+4. Open http://127.0.0.1:5000 or https://global-fuel-prices-and-taxation-trends-z2fs.onrender.com in your browser.
